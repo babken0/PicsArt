@@ -34,10 +34,10 @@ public class TestTaxi {
                     taxiService.printCostAndSpeed(taxiService.createTaxi());
                     break;
                 case 2:
-                    taxiService.newer(taxiService.createTaxi(),taxiService.createTaxi());
+                    System.out.println(taxiService.newer(taxiService.createTaxi(), taxiService.createTaxi()));
                     break;
                 case 3:
-                    taxiService.smallestSeatsCount(taxiService.createTaxi(),taxiService.createTaxi(),taxiService.createTaxi());
+                    System.out.println(taxiService.smallestSeatsCount(taxiService.createTaxi(), taxiService.createTaxi(), taxiService.createTaxi()));
                     break;
                 case 4:
                     taxiService.printNotSportTaxis(taxis);
@@ -46,10 +46,10 @@ public class TestTaxi {
                     taxiService.more50000mileage(taxis);
                     break;
                 case 6:
-                    taxiService.minWeight(taxis);
+                    System.out.println(taxiService.minWeight(taxis));
                     break;
                 case 7:
-                    taxiService.minSportTaxiCost(taxis);
+                    System.out.println(taxiService.minSportTaxiCost(taxis));
                     break;
                 case 8:
                     taxiService.orderByYear(taxis);
