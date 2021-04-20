@@ -7,7 +7,8 @@ public class Main {
 
         worker.voice();
         student.voice();
-
+        String a = "Barev";
+   int[] hum = new int[10];
 
     }
 }
