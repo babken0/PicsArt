@@ -1,9 +1,10 @@
-package readFileStudent;
+package inheritance.service;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.List;
@@ -14,12 +15,11 @@ public class FileService {
     }
 
     public static void writeFile(String path,String string) throws IOException {
-         Files.write(Paths.get(path),string.getBytes(StandardCharsets.UTF_8), StandardOpenOption.APPEND);
+        Files.write(Paths.get(path),string.getBytes(StandardCharsets.UTF_8), StandardOpenOption.APPEND);
     }
 
 
     public static void createFile(String fileName) throws IOException {
-        Files.createFile(Paths.get("C:\\Users\\babke\\IdeaProjects\\PicsArt\\src\\readFileStudent" + File.separator + fileName));
+        Files.createFile(Paths.get("C:\\Users\\babke\\IdeaProjects\\PicsArt\\src\\inheritance\\files" + File.separator + fileName));
     }
-
 }
