@@ -94,8 +94,8 @@ public class TaxiService {
                     taxis[j]= taxis[j+1];
                     taxis[j+1] = c;
                 }
-                System.out.println(taxis[taxis.length-i-1]);
             }
+            System.out.println(taxis[taxis.length-i-1]);
         }
     }
 
