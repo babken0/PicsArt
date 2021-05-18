@@ -9,10 +9,16 @@ public class TestSingleton {
 }
  enum SingletonEnum {
     INSTANCE;
+    SingletonEnum(int value){
+        this.value = value;
+    }
 
-    private int value;
+    public int value;
 
-    public int getValue() {
+      SingletonEnum() {
+     }
+
+     public int getValue() {
         return value;
     }
 
