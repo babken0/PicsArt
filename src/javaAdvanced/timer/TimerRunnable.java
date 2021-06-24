@@ -27,7 +27,6 @@ public class TimerRunnable implements Runnable {
 
     @Override
     public void run() {
-        boolean flag;
         for (int i = min; i >=0; i--) {
             for (int j = sec; j >= 0; j--){
                 System.out.println(min + ":" + (sec<10?"0"+sec:sec));
